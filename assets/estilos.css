@@ -1,0 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: sans-serif;
+}
+
+h2 {
+    color: navy;
+}
+video, img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    width: 80%;
+    height: 400px;
+}

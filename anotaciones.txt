@@ -1,0 +1,11 @@
+Tabla periodica de los elementos html, la puedo usar en paralelo con 
+htmlreference.io 
+Solo tiene que haber una etiqueta h1 por cuestiones de posicionamiento
+
+svgrepo 
+
+emmet puedo buscar todas las abreviaturas como por ej tr>td*3
+htmlreference.io 
+emojipedia.org
+caniuse.com
+6:15
