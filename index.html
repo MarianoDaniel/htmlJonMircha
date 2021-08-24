@@ -9,6 +9,21 @@
     <!--Description -no más de 165 caracteres, cada página tiene que tener uno distinto-->
     <meta name="description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
     <link rel="stylesheet" href="assets/estilos.css">
+    <!--Etiquetas SEO-->
+    <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+    <!--Le podemos cargar el color que queramos a la barra url del celular-->
+    <meta name="theme-color" content="#FF6600">
+    <!--https://ogp.me/ me sirve para que cuando se comparta el link de mi página en las redes sociales los algoritmos lean la información y me formen una tarjeta de presentación del mismo-->
+    <meta property="og:title" content="Aprendiendo HTML">
+    <meta property="og:description" content="En esta página estamos aprendiendo los fundamentos de HTML con @jonmircha">
+    <!--Ruta absoluta donde se va a encontrar la página-->
+    <meta property="og:image" content="https://tudominio.com/img/imagen">
+    <meta property="og:url" content="https://tudominio.com/index.html">
+
+
+
 </head>
 
 <body>
@@ -36,6 +51,9 @@
         <li><a href="index.html#elementos-multimedia">Elementos Multimedia</a></li>
         <li><a href="index.html#iframe">Iframes</a></li>
         <li><a href="index.html#formularios">Formularios</a></li>
+        <li><a href="index.html#form-contacto">Formulario de contacto</a></li>
+        <li><a href="index.html#data-attributes">Data Attribute</a></li>
+        <li><a href="index.html#metas-seo">Metaetiquetas SEO</a></li>
 
     </ul>
     <hr>
@@ -371,7 +389,7 @@
     <form action="https://ladireccion..." method="POST" autocomplete="off">
         <!--Para que la url a la que enviamos nuestro formulario
          detecte cada input hay que ponerle un name -->
-         <label for="usuario">Usuario</label>
+        <label for="usuario">Usuario</label>
         <input type="text" id="usuario" placeholder="Nombre" name="usuario" required pattern="expresionesregulares">
         <label for="password">Password</label>
         <input type="password" id="password" placeholder="Password" name="password" required>
@@ -396,20 +414,74 @@
         <p>Elegí tu lenguaje de programación favorito</p>
         <!--Como todas las variables name tienen el mismo valor el required aplica para todas
         aunque se lo coloque a una sola-->
-        <input type="radio" id="radio-js" name="lenguaje" value="js" required >
+        <input type="radio" id="radio-js" name="lenguaje" value="js" required>
         <label for="radio-js">Javascript</label>
-        <input type="radio" id="radio-py" name="lenguaje" value="py" >
+        <input type="radio" id="radio-py" name="lenguaje" value="py">
         <label for="radio-py">Python</label>
-        <input type="radio" id="radio-php" name="lenguaje" value="php" >
+        <input type="radio" id="radio-php" name="lenguaje" value="php">
         <label for="radio-php">PHP</label>
+
+        <br>
+        <label>
+            <input name="alimento" value="azucar" type="checkbox">
+            azucar
+        </label>
+        <label>
+            <input name="alimento" value="pan" type="checkbox">
+            pan
+        </label>
+        <label>
+            <input name="alimento" value="galletitas" type="checkbox">
+            galletitas
+        </label>
+
+        <label>
+            <input name="alimento" value="papas" type="checkbox">
+            papas
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" required>
+            aceptas terminos y condiciones?
+        </label>
         <br>
         <input type="submit">
         <input type="reset">
     </form>
     <br>
-
     <a href="index.html#inicio">☝️</a>
+    <hr>
+    <br>
+    <h2 id="form-contacto">Formulario de contacto</h2>
+    <br>
+    <form action="https://formsubmit.co/avicomariano@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            title="Nombre sólo acepta letras y espacios en blanco" required>
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+            title="Formato de correo inválido" required>
+        <br>
+        <textarea name="comentarios" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit">
+    </form>
+    <br>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
 
+    <h2 id="data-attributes">Data Attributes</h2>
+    <ul>
+        <li data-id="1" data-name="spring">Primavera</li>
+        <li data-id="2" data-name="summer">Verano</li>
+        <li data-id="3" data-name="autumm">Otoño</li>
+        <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <br>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+    <br>
+    <h2 id="metas-seo">Metaetiquetas para SEO</h2>
+    <a href="index.html#inicio">☝️</a>
     <hr>
 
 </body>
