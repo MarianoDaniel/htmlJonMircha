@@ -21,6 +21,9 @@
     <!--Ruta absoluta donde se va a encontrar la página-->
     <meta property="og:image" content="https://tudominio.com/img/imagen">
     <meta property="og:url" content="https://tudominio.com/index.html">
+    <!--Twitter tiene su propia forma pero también utiliza el protocolo Open Graph -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@mitwetter">
 
 
 
@@ -54,6 +57,7 @@
         <li><a href="index.html#form-contacto">Formulario de contacto</a></li>
         <li><a href="index.html#data-attributes">Data Attribute</a></li>
         <li><a href="index.html#metas-seo">Metaetiquetas SEO</a></li>
+        <li><a href="index.html#accesibilidad-web">Accesibilidad Web</a></li>
 
     </ul>
     <hr>
@@ -483,6 +487,23 @@
     <h2 id="metas-seo">Metaetiquetas para SEO</h2>
     <a href="index.html#inicio">☝️</a>
     <hr>
+    <br>
+    <h2 id="accesibilidad-web">Accesibilidad Web</h2>
+    <h3 role="title">Las estaciones del año</h3>
+    <ul role="list">
+        <!--Atributo tabindex que toma el tabulador para poder recorrer los elementos -->
+        <li tabindex="1" role="listitem">Primavera</li>
+        <li tabindex="2" role="listitem">Verano</li>
+        <li tabindex="3" role="listitem">Otoño</li>
+        <li tabindex="4" role="listitem">Invierno</li>
+    </ul>
+    <!--aria = Accessible Rich Internet Applications (Aplicaciones de Internet enriquecidas accesibles)-->
+    <a role="link" aria-label="En este enlace encontraras más información sobre las estaciones del año" href="#"
+        target="_blank">Más información</a>
+    <br>
+    <a href="index.html#inicio">☝️</a>
+    <hr>
+
 
 </body>
 

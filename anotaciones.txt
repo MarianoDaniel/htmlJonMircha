@@ -10,4 +10,5 @@ emojipedia.org
 caniuse.com
 https://formsubmit.co/
 https://ogp.me/
+https://www.w3.org/
 6:15
